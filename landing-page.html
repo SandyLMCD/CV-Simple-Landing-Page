@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🌞 Creative Visionaire Booking Waitlist</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: whitesmoke;
+      }
+
+      .container {
+        display: block;
+        padding: 50px;
+        margin: 60px auto;
+        width: 40%;
+        text-align: center;
+        background-color: black;
+        border-radius: 50px;
+      }
+
+      img {
+        width: 280px;
+        height: auto;
+      }
+
+      button {
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 25px;
+        background-color: #f4549d;
+        color: white;
+        font-family: segoe ui;
+        border-color: black;
+        cursor: pointer;
+      }
+
+      button:hover {
+        box-shadow: 5px 5px 10px rgba(222, 61, 134, 0.4);
+        transition: 100ms ease-in-out;
+      }
+
+      a{
+        color: white;
+      }
+
+      h2{
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Creative Visionaire</h1>
+      <h2>Let's Make Your Vision a Reality!</h2>
+      <hr>
+      <img src="cover photo.png" class="cvPhoto" />
+      <hr>
+      <p>
+        Welcome to <strong><em>Creative Visionaire's</strong></em> booking page, your
+        getaway to unlocking the full potential of your brand. We are a leading
+        provider of cutting-edge graphic design and branding services, dedicated
+        to transforming your vision into captivating visual experiences.
+      </p>
+
+      <p>
+        Book your consultation today and embark on a transformative journey with
+        Creative Visionaire.
+      </p>
+
+      <a href="https://www.instagram.com/creative_visionaire/">Instagram Profile</a>
+
+      <button>Let's Create Something Extraordinary!</button>
+    </div>
+    <script>
+      function whenButtonClicked() {
+        let name = prompt("What is your name?");
+        let businessName = prompt("What is your business name?");
+        
+        if (name === null) {
+          alert("Please enter a valid name.");
+        } else {
+          alert(
+          `Hello ${name}! We will get back to you soon, please check your email address from time to time.`
+        );
+        }
+      }
+
+      let buttonClicked = document.querySelector("button");
+      buttonClicked.addEventListener("click", whenButtonClicked);
+    </script>
+  </body>
+</html>
