@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🌞 Creative Visionaire Booking Waitlist</title>
+    <title>🌞 Creative Visionaire</title>
     <style>
+      * {
+      box-sizing: border-box;
+      }
+
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         color: whitesmoke;
+        background-color: black;
       }
 
       .container {
-        display: block;
-        padding: 50px;
-        margin: 60px auto;
+        /* display: block; */
+        /* padding: 50px; */
+        margin: 50px auto;
         width: 40%;
         text-align: center;
         background-color: black;
@@ -21,8 +26,8 @@
       }
 
       img {
-        width: 280px;
-        height: auto;
+        width: auto;
+        height: 250px;
       }
 
       button {
@@ -48,16 +53,69 @@
       h2{
         font-weight: normal;
       }
+
+      .service-1{
+        background-color: #f4549d;
+        padding: 10px;
+        color: #0c0c0c;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .service-2 {
+        background-color: blueviolet;
+        padding: 10px;
+        color: #0c0c0c;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .service-3 {
+        background-color: #42C5F6;
+        padding: 10px;
+        color: #0c0c0c;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .service-4 {
+        background-color: #FCEE21;
+        padding: 10px;
+        color: #0c0c0c;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      
+      .text {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top:20px;
+        padding-bottom: 20px;
+      }
+
+      .no-margin {
+        margin: 0;
+
+      }
+
+      hr {
+        height: 1px;
+        background-color: #0c0c0c;
+        border: none;
+      }
+
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Creative Visionaire</h1>
+      <h1>Creative Visionaire Booking Form</h1>
       <h2>Let's Make Your Vision a Reality!</h2>
       <hr>
-      <img src="cover photo.png" class="cvPhoto" />
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/089/573/original/360813399_1442884919802636_3484807164272300050_n.png?1689216086" class="cvPhoto" />
       <hr>
-      <p>
+
+      <div class="text">
+        <p>
         Welcome to <strong><em>Creative Visionaire's</strong></em> booking page, your
         getaway to unlocking the full potential of your brand. We are a leading
         provider of cutting-edge graphic design and branding services, dedicated
@@ -68,8 +126,51 @@
         Book your consultation today and embark on a transformative journey with
         Creative Visionaire.
       </p>
+      </div>
+      
+      <div class='service-1'>
+        <h1 class="no-margin">Brand Identity</h1>
+        <hr>
+        It is important for businesses to keep a consistent personal branding to create a memorable influence on target customers. Connect with our Creative Team now!
+        <p> Includes: Primary Logo, Secondary Logo, Color Scheme, Brand Guidelines</p>
+        <p class="no-margin">Timeline: 1-2 Weeks</p>
+      </div>
 
+      <div class='service-2'>
+        <h1 class="no-margin">Brand Visuals</h1>
+        <hr>
+        Perfect if for businesses who already have an establishing customer relationship and is in need to a fresh rebranding.
+        <p> Includes: Primary Logo, Secondary Logo, Logo Marks, Color Schemes, Illustrations, Teaser Videos, Photoshoot Set, Brand Guidelines</p>
+        <p>Timeline: 3-4 Weeks</p>
+      </div>
+
+      <div class='service-3'>
+        <h1 class="no-margin">Social Media Management</h1>
+        <hr>
+        Make more time for other important things! Connect with our Social Management Team and we'll do all the magic for your social media pages.
+        <p>Includes: Search Engine Optimization (SEO), Social Media Templates, Scheduling</p>
+        <p>Timeline: 3-4 Weeks | Contractual </p>
+      </div>
+
+      <div class='service-4'>
+        <h1 class="no-margin">Software and Application Development</h1>
+        <hr>
+        Take your business to the next level! Let our Tech Team know what you need to increase customer reach.
+        <p>Includes: Website Design & Development, Applications Development</p>
+        <p>Timeline: 4-6 Weeks</p>
+      </div>
+
+      <!-- <ul>
+        <li class="service-1">Service 1</li>
+          <p>Description about Service 1.</p>
+
+        <li class="service-2">Service 2</li>
+          <p>Description about Service 2</p>
+      </ul> -->
+
+      <br>
       <a href="https://www.instagram.com/creative_visionaire/">Instagram Profile</a>
+      <br>
 
       <button>Let's Create Something Extraordinary!</button>
     </div>
@@ -79,7 +180,7 @@
         let businessName = prompt("What is your business name?");
         
         if (name === null) {
-          alert("Please enter a valid name.");
+          alert("Please enter a valid entry.");
         } else {
           alert(
           `Hello ${name}! We will get back to you soon, please check your email address from time to time.`
